@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot name="kuka_kr3_robot" xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:include filename="$(find kr3_description)/urdf/kr3_macro.xacro" />
+  <xacro:kuka_kr3 prefix=""/>
+
+  <gazebo>
+    <plugin name="conveyor_belt_plugin" filename="libROSConveyorBeltPlugin.so">
+        <robot_namespace>/robot_ns</robot_namespace>
+        <link>belt_link</link>
+        <update_rate>10</update_rate>
+        <max_velocity>0.2</max_velocity>
+    </plugin>
+  </gazebo>
+
+</robot>
+
