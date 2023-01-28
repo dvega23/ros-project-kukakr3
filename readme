@@ -1,0 +1,4 @@
+this is a project that was implemented in ros that use the knowgled of kinematics of a robot
+to fullfil the adjustment that we need in a certain type of assgimente.
+In this files you would see the used of kuka kr3 that was implemented to move some objects in the shape
+of cilinders and cube to the determine baskets you can also see the world that was created to make it more realistic
